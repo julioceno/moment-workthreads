@@ -7,6 +7,8 @@ dotenv.config();
 const app = express();
 const upload = multer();
 
+const port = process.env.PORT || 3030;
+
 app.get("/", (req, res) => {
   res.status(200).send("Hello word");
 });
